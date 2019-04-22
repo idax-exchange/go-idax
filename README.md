@@ -8,15 +8,15 @@ To read full documentation, specs and find out which request params are required
 ```go
 // Initialize REST client service
 var idaxRestService = idax.NewIdaxRestService(
-	"https://qa-openapi.idax.mn",
+	"https://url",
 	"key", 
 	"secret"
 )
 
 // Initialize Websocket client service
 var idaxWsConn = idax.NewIdaxWsService(
-	"wss://openws.idax.pro/ws",
-	"https://openws.idax.pro/ws",
+	"wss://url",
+	"https://url",
 	"key",
 	"secret"
 )
