@@ -8,7 +8,7 @@ import (
 
 func TestWebsocket(test *testing.T) {
 	// Initialize Websocket client service
-	var wsConn = idax.NewIdaxWsService("wss://openws.idax.pro/ws", "https://openws.idax.pro/ws", "93d6db906e814ab3b0ad5c77aa69ebc2bed4390b1f87444bb040ab775d347858", "13896d803ff644d2a0033580b8f86b5abf10d2c9f2d9454da0541e586b6d77d4")
+	var wsConn = idax.NewIdaxWsService("wss://openws.idax.pro/ws", "https://openws.idax.pro/ws", "your apiKey", "your secret")
 
 	// Initialize Websocket receives message channels
 	rchan := wsConn.ReceiveMessage()
